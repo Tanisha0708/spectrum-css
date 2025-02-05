@@ -32,6 +32,26 @@
 
 		--spectrum-actionbutton-content-color-selected: var(--spectrum-gray-50);
 
+		&.spectrum-ActionButton--sizeM {
+			--spectrum-actionbutton-border-radius: var(--spectrum-corner-radius-medium-size-medium);
+		}
+
+		&.spectrum-ActionButton--sizeXS {
+			--spectrum-actionbutton-border-radius: var(--spectrum-corner-radius-medium-size-extra-small);
+		}
+
+		&.spectrum-ActionButton--sizeS {
+			--spectrum-actionbutton-border-radius: var(--spectrum-corner-radius-medium-size-small);
+		}
+
+		&.spectrum-ActionButton--sizeL {
+			--spectrum-actionbutton-border-radius: var(--spectrum-corner-radius-medium-size-large);
+		}
+
+		&.spectrum-ActionButton--sizeXL {
+			--spectrum-actionbutton-border-radius: var(--spectrum-corner-radius-medium-size-extra-large);
+		}
+
 		&.spectrum-ActionButton--quiet {
 			--spectrum-actionbutton-background-color-default: transparent;
 			--spectrum-actionbutton-background-color-hover: var(--spectrum-gray-100);
