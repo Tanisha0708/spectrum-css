@@ -14,7 +14,6 @@
 const { join } = require("path");
 
 module.exports = ({
-	file,
 	resolveImports = true,
 	lint = true,
 	verbose = true,
@@ -44,7 +43,7 @@ module.exports = ({
 						const filePath = packageParts.length > 2 ? packageParts.slice(2).join("/") : "index.css";
 
 						if (packageParts[1] === "tokens") {
-							return join(__dirname, packageParts[1], "dist", filePath);
+							return join(__dirname, packageParts[1], "dist", "css", filePath);
 						}
 
 						return join(__dirname, "components", packageParts[1], filePath);
@@ -77,9 +76,6 @@ module.exports = ({
 				prefix: "is-"
 			} : false,
 			"postcss-hover-media-feature": {},
-			"@spectrum-tools/postcss-rgb-mapping": {
-				colorFunctionalNotation: false,
-			},
 			...additionalPlugins,
 			/* --------------------------------------------------- */
 			/* ------------------- POLYFILLS --------------------- */
@@ -121,7 +117,7 @@ module.exports = ({
 						reduceIdents: false,
 						discardUnused: false,
 						discardComments: {
-							remove: (comment) => !comment.includes("stylelint-disable"),
+							remove: (comment) => !comment.includes("stylelint-"),
 						},
 						// @todo yarn add -DW css-declaration-sorter
 						cssDeclarationSorter: false, // @todo { order: "smacss" }

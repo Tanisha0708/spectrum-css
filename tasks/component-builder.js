@@ -52,6 +52,7 @@ async function processCSS(
 		configPath = __dirname,
 		minify = false,
 		encoding = "utf-8",
+		customTagline,
 		...postCSSOptions
 	} = {},
 ) {
@@ -96,7 +97,19 @@ async function processCSS(
 
 	if (result.error) return Promise.reject(result.error);
 
-	if (!result.css) return Promise.resolve();
+	const logs = [];
+	if (result.warnings().length > 0) {
+		/** @todo, do we want to support a verbose mode that prints out the warnings during the build? */
+		result.warnings().forEach((warning) => {
+			logs.push(`${"⚠".yellow}  ${warning.text}`);
+		});
+	}
+
+	if (!result.css) return Promise.resolve(logs);
+
+	if (typeof customTagline === "string") {
+		result.css = `${customTagline}\n${result.css}`;
+	}
 
 	const formatted = !minify ? await prettier.format(result.css, {
 		parser: "css",
@@ -107,15 +120,18 @@ async function processCSS(
 	}) : result.css;
 
 	// If no output is provided, return the formatted content
+	/** @todo how can we return the logs from this function if we're returning the content instead here? */
 	if (!output) return Promise.resolve(formatted);
 
+	/* Ensure the directory exists */
 	if (!fs.existsSync(path.dirname(output))) {
 		await fsp.mkdir(path.dirname(output), { recursive: true }).catch((err) => {
 			if (!err) return;
-			console.log(
+
+			logs.push(
 				`${"✗".red}  problem making the ${relativePrint(path.dirname(output), { cwd }).yellow} directory`,
 			);
-			return Promise.reject(err);
+			return Promise.reject([...logs, err]);
 		});
 	}
 
@@ -129,7 +145,7 @@ async function processCSS(
 		);
 	}
 
-	return Promise.all(promises);
+	return Promise.all(promises).then((r) => [...r, ...logs]);
 }
 
 /**
@@ -145,11 +161,6 @@ async function build({ cwd = process.cwd(), clean = false, componentName } = {})
 
 	if (!componentName || validateComponentName(componentName) !== true) {
 		componentName = getPackageFromPath(cwd);
-	}
-
-	// Create the dist directory if it doesn't exist
-	if (!fs.existsSync(path.join(cwd, "dist"))) {
-		fs.mkdirSync(path.join(cwd, "dist"));
 	}
 
 	return processCSS(undefined, path.join(cwd, "index.css"), path.join(cwd, "dist", "index.css"), {

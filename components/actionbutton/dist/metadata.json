@@ -71,8 +71,6 @@
     "--mod-actionbutton-focus-indicator-border-radius",
     "--mod-actionbutton-focus-indicator-color",
     "--mod-actionbutton-focus-indicator-gap",
-    "--mod-actionbutton-focus-indicator-thickness",
-    "--mod-actionbutton-font-size",
     "--mod-actionbutton-height",
     "--mod-actionbutton-icon-size",
     "--mod-actionbutton-label-color",

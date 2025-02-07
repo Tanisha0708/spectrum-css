@@ -1,3 +1,5 @@
+/* @spectrum-css/tokens@v16.0.0 */
+
 /*!
  * Copyright 2024 Adobe. All rights reserved.
  *
@@ -787,10 +789,6 @@
 	--spectrum-assetcard-selectionindicator-background-color-ordered: var(--spectrum-blue-800);
 	--spectrum-assestcard-focus-indicator-color: var(--spectrum-blue-700);
 
-	--spectrum-assetlist-item-background-color-selected-hover: rgba(var(--spectrum-blue-800-rgb), 0.25);
-	--spectrum-assetlist-item-background-color-selected: rgba(var(--spectrum-blue-800-rgb), 0.15);
-	--spectrum-assetlist-border-color-key-focus: var(--spectrum-blue-700);
-
 	--spectrum-badge-label-icon-color-primary: var(--spectrum-black);
 
 	--spectrum-calendar-day-background-color-selected: rgba(var(--spectrum-blue-800-rgb), 0.15);
@@ -801,7 +799,6 @@
 	--spectrum-calendar-day-background-color-cap-selected: rgba(var(--spectrum-blue-800-rgb), 0.25);
 	--spectrum-calendar-day-background-color-key-focus: rgba(var(--spectrum-white-rgb), 0.07);
 	--spectrum-calendar-day-border-color-key-focus: var(--spectrum-blue-700);
-
 	--spectrum-card-selected-background-color-rgb: var(--spectrum-blue-500-rgb);
 
 	--spectrum-coach-indicator-ring-default-color: var(--spectrum-blue-700);
@@ -814,7 +811,6 @@
 	--spectrum-logic-button-and-border-color: var(--spectrum-blue-800);
 	--spectrum-logic-button-and-background-color-hover: var(--spectrum-blue-1000);
 	--spectrum-logic-button-and-border-color-hover: var(--spectrum-blue-1000);
-
 	--spectrum-logic-button-or-background-color: var(--spectrum-magenta-700);
 	--spectrum-logic-button-or-border-color: var(--spectrum-magenta-700);
 	--spectrum-logic-button-or-background-color-hover: var(--spectrum-magenta-900);
@@ -1399,7 +1395,6 @@
 	--spectrum-drop-shadow-x: var(--spectrum-drop-shadow-x-100);
 	--spectrum-drop-shadow-y: var(--spectrum-drop-shadow-y-100);
 	--spectrum-drop-shadow-blur: var(--spectrum-drop-shadow-blur-100);
-	--spectrum-android-elevation: 2dp;
 	--spectrum-spacing-50: 2px;
 	--spectrum-spacing-75: 4px;
 	--spectrum-spacing-100: 8px;
@@ -2583,7 +2578,6 @@
 	--spectrum-coach-indicator-gap: 8px;
 	--spectrum-coach-indicator-ring-diameter: 20px;
 	--spectrum-coach-indicator-quiet-ring-diameter: 10px;
-
 	--spectrum-coachmark-buttongroup-display: none;
 	--spectrum-coachmark-buttongroup-mobile-display: flex;
 	--spectrum-coachmark-menu-display: none;
@@ -3440,16 +3434,6 @@
 	--spectrum-accent-subtle-background-color-default: var(--spectrum-accent-color-200);
 	--color-scheme: light;
 
-	--spectrum-assetcard-border-color-selected: var(--spectrum-blue-900);
-	--spectrum-assetcard-border-color-selected-hover: var(--spectrum-blue-900);
-	--spectrum-assetcard-border-color-selected-down: var(--spectrum-blue-1000);
-	--spectrum-assetcard-selectionindicator-background-color-ordered: var(--spectrum-blue-900);
-	--spectrum-assestcard-focus-indicator-color: var(--spectrum-blue-800);
-
-	--spectrum-assetlist-item-background-color-selected-hover: rgba(var(--spectrum-blue-900-rgb), 0.2);
-	--spectrum-assetlist-item-background-color-selected: rgba(var(--spectrum-blue-900-rgb), 0.1);
-	--spectrum-assetlist-border-color-key-focus: var(--spectrum-blue-800);
-
 	--spectrum-badge-label-icon-color-primary: var(--spectrum-white);
 
 	--spectrum-calendar-day-background-color-selected: rgba(var(--spectrum-blue-900-rgb), 0.1);
@@ -3460,7 +3444,6 @@
 	--spectrum-calendar-day-background-color-cap-selected: rgba(var(--spectrum-blue-900-rgb), 0.2);
 	--spectrum-calendar-day-background-color-key-focus: rgba(var(--spectrum-black-rgb), 0.06);
 	--spectrum-calendar-day-border-color-key-focus: var(--spectrum-blue-800);
-
 	--spectrum-card-selected-background-color-rgb: var(--spectrum-blue-900-rgb);
 
 	--spectrum-coach-indicator-ring-default-color: var(--spectrum-blue-800);
@@ -3473,7 +3456,6 @@
 	--spectrum-logic-button-and-border-color: var(--spectrum-blue-900);
 	--spectrum-logic-button-and-background-color-hover: var(--spectrum-blue-1100);
 	--spectrum-logic-button-and-border-color-hover: var(--spectrum-blue-1100);
-
 	--spectrum-logic-button-or-background-color: var(--spectrum-magenta-900);
 	--spectrum-logic-button-or-border-color: var(--spectrum-magenta-900);
 	--spectrum-logic-button-or-background-color-hover: var(--spectrum-magenta-1100);
@@ -4199,7 +4181,6 @@
 	--spectrum-coach-indicator-gap: 6px;
 	--spectrum-coach-indicator-ring-diameter: var(--spectrum-spacing-300);
 	--spectrum-coach-indicator-quiet-ring-diameter: var(--spectrum-spacing-100);
-
 	--spectrum-coachmark-buttongroup-display: flex;
 	--spectrum-coachmark-buttongroup-mobile-display: none;
 	--spectrum-coachmark-menu-display: inline-flex;
