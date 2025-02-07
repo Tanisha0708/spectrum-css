@@ -11,7 +11,7 @@
  * governing permissions and limitations under the License.
  */
 
-.spectrum-Search {
+ .spectrum-Search {
 	--spectrum-search-border-color-default: var(--spectrum-gray-500);
 	--spectrum-search-border-color-hover: var(--spectrum-gray-600);
 	--spectrum-search-border-color-focus: var(--spectrum-gray-800);

@@ -57,7 +57,6 @@
 
 	--highcontrast-tooltip-border-width: 0px;
 }
-
 .spectrum-Tooltip {
 	@extend %spectrum-overlay;
 
@@ -577,7 +576,7 @@
 @media (forced-colors: active) {
 	.spectrum-Tooltip {
 		--highcontrast-tooltip-border-width: 1px;
-
+        
 		border: var(--highcontrast-tooltip-border-width) solid CanvasText;
 	}
 

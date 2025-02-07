@@ -150,7 +150,6 @@
 	&:focus-visible {
 		--mod-drop-zone-border-style: solid;
 		--spectrum-drop-zone-border-color: var(--highcontrast-drop-zone-border-color-hover, var(--mod-drop-zone-border-color-hover, var(--spectrum-drop-zone-border-color-hover)));
-
 		outline: 0;
 	}
 }
