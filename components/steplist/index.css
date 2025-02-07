@@ -188,7 +188,7 @@
 
 	transform: translateX(-50%);
 
-	color: var(--mod-steplist-incomplete-label-color, var(--spectrum-steplist-incomplete-label-text-color));
+	color: var(--mod-steplist-incomplete-label-color, var(--spectrum-steplist-incomplete-label-color));
 
 	&:dir(rtl) {
 		transform: translateX(50%);
@@ -225,8 +225,7 @@
 
 	border-radius: var(--mod-steplist-marker-diameter, var(--spectrum-steplist-marker-diameter));
 
-	border-width: 2px;
-	border-style: solid;
+	border: 2px solid;
 	border-color: var(--mod-steplist-incomplete-marker-border-color, var(--spectrum-steplist-incomplete-marker-border-color));
 	background: transparent;
 }
