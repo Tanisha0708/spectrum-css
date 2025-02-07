@@ -328,18 +328,6 @@
     "--spectrum-workflow-icon-size-300",
     "--spectrum-workflow-icon-size-75"
   ],
-  "system-theme": [
-    "--system-textfield-background-color",
-    "--system-textfield-background-color-disabled",
-    "--system-textfield-border-color",
-    "--system-textfield-border-color-disabled",
-    "--system-textfield-border-color-focus",
-    "--system-textfield-border-color-focus-hover",
-    "--system-textfield-border-color-hover",
-    "--system-textfield-border-color-keyboard-focus",
-    "--system-textfield-border-width",
-    "--system-textfield-quiet-border-color-disabled"
-  ],
   "passthroughs": [],
   "high-contrast": [
     "--highcontrast-textfield-border-color",

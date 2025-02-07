@@ -50,7 +50,7 @@
     "--mod-accordion-background-color-key-focus",
     "--mod-accordion-component-edge-to-text",
     "--mod-accordion-corner-radius",
-    "--mod-accordion-disclosure-indicator-height",
+    "--mod-accordion-disclosure-indicator-size",
     "--mod-accordion-disclosure-indicator-to-text-space",
     "--mod-accordion-divider-color",
     "--mod-accordion-divider-thickness",
@@ -105,10 +105,11 @@
     "--spectrum-accordion-content-area-bottom-to-content",
     "--spectrum-accordion-content-area-top-to-content",
     "--spectrum-accordion-corner-radius",
-    "--spectrum-accordion-disclosure-indicator-height",
+    "--spectrum-accordion-disclosure-indicator-size",
     "--spectrum-accordion-disclosure-indicator-to-text",
     "--spectrum-accordion-disclosure-indicator-to-text-space",
     "--spectrum-accordion-divider-color",
+    "--spectrum-accordion-divider-thickness",
     "--spectrum-accordion-edge-to-disclosure-indicator",
     "--spectrum-accordion-edge-to-disclosure-indicator-space",
     "--spectrum-accordion-edge-to-text",
@@ -197,11 +198,6 @@
     "--spectrum-neutral-content-color-hover",
     "--spectrum-neutral-content-color-key-focus",
     "--spectrum-sans-font-family-stack"
-  ],
-  "system-theme": [
-    "--system-accordion-divider-color",
-    "--system-accordion-item-content-color",
-    "--system-accordion-item-content-disabled-color"
   ],
   "passthroughs": [],
   "high-contrast": []

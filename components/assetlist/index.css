@@ -11,8 +11,6 @@
  * governing permissions and limitations under the License.
  */
 
-@import "./themes/spectrum-two.css";
-
 .spectrum-AssetList {
 	--spectrum-assetlist-width: 272px;
 	--spectrum-assetlist-child-indicator-animation: var(--spectrum-animation-duration-100);
@@ -35,6 +33,9 @@
 	/* label */
 	--spectrum-assetlist-item-label-padding-inline-start: var(--spectrum-spacing-100);
 	--spectrum-assetlist-label-color: var(--spectrum-neutral-content-color-default);
+
+	--spectrum-assetlist-item-background-color-down: var(--spectrum-gray-200);
+	--spectrum-assetlist-item-background-color-hover: var(--spectrum-gray-100);
 
 	margin-block-start: 0;
 	margin-block-end: 0;

@@ -11,14 +11,13 @@
  * governing permissions and limitations under the License.
  */
 
-@import "./themes/spectrum-two.css";
-
 .spectrum-Toast {
-	/* Hardcoded variables */
+	--spectrum-toast-background-color-default: var(--spectrum-neutral-subdued-background-color-default);
+	--spectrum-toast-divider-color: var(--spectrum-transparent-white-400);
+
 	--spectrum-toast-font-weight: var(--spectrum-regular-font-weight);
 
 	/* Size */
-
 	--spectrum-toast-font-size: var(--spectrum-font-size-100);
 	--spectrum-toast-corner-radius: var(--spectrum-corner-radius-100);
 	--spectrum-toast-block-size: var(--spectrum-toast-height);
@@ -29,7 +28,6 @@
 	--spectrum-toast-line-height-cjk: var(--spectrum-cjk-line-height-100);
 
 	/* Space */
-
 	--spectrum-toast-spacing-icon-to-text: var(--spectrum-text-to-visual-100);
 
 	--spectrum-toast-spacing-start-edge-to-text-and-icon: var(--spectrum-spacing-300);

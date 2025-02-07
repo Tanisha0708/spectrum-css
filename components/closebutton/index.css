@@ -11,7 +11,6 @@
  * governing permissions and limitations under the License.
  */
 
-@import "./themes/spectrum-two.css";
 @import "@spectrum-css/commons/basebutton.css";
 
 /* Windows high contrast mode */
@@ -63,15 +62,17 @@
 
 	--spectrum-closebutton-animation-duration: var(--spectrum-animation-duration-100);
 
+	--spectrum-closebutton-background-color-default: transparent;
+	--spectrum-closebutton-background-color-hover: var(--spectrum-gray-100);
+	--spectrum-closebutton-background-color-down: var(--spectrum-gray-200);
+	--spectrum-closebutton-background-color-focus: var(--spectrum-gray-100);
+
+	--spectrum-closebutton-size: var(--spectrum-component-height-100);
+	--spectrum-closebutton-border-radius: var(--spectrum-component-height-100);
+
 	&.spectrum-CloseButton--sizeS {
 		--spectrum-closebutton-size: var(--spectrum-component-height-75);
 		--spectrum-closebutton-border-radius: var(--spectrum-component-height-75);
-	}
-
-	&,
-	&.spectrum-CloseButton--sizeM {
-		--spectrum-closebutton-size: var(--spectrum-component-height-100);
-		--spectrum-closebutton-border-radius: var(--spectrum-component-height-100);
 	}
 
 	&.spectrum-CloseButton--sizeL {
@@ -90,6 +91,10 @@
 		--spectrum-closebutton-icon-color-default: var(--spectrum-white);
 		--spectrum-closebutton-icon-color-disabled: var(--spectrum-disabled-static-white-content-color);
 		--spectrum-closebutton-focus-indicator-color: var(--spectrum-static-white-focus-indicator-color);
+
+		--spectrum-closebutton-static-background-color-hover: var(--spectrum-transparent-white-400);
+		--spectrum-closebutton-static-background-color-down: var(--spectrum-transparent-white-500);
+		--spectrum-closebutton-static-background-color-focus: var(--spectrum-transparent-white-400);
 	}
 
 	&.spectrum-CloseButton--staticBlack {
@@ -98,8 +103,14 @@
 		--spectrum-closebutton-icon-color-default: var(--spectrum-black);
 		--spectrum-closebutton-icon-color-disabled: var(--spectrum-disabled-static-black-content-color);
 		--spectrum-closebutton-focus-indicator-color: var(--spectrum-static-black-focus-indicator-color);
-	}
 
+		--spectrum-closebutton-static-background-color-hover: var(--spectrum-transparent-black-400);
+		--spectrum-closebutton-static-background-color-down: var(--spectrum-transparent-black-500);
+		--spectrum-closebutton-static-background-color-focus: var(--spectrum-transparent-black-400);
+	}
+}
+
+.spectrum-CloseButton {
 	@extend %spectrum-BaseButton;
 
 	block-size: var(--mod-closebutton-height, var(--spectrum-closebutton-size));

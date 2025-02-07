@@ -11,9 +11,10 @@
  * governing permissions and limitations under the License.
  */
 
-@import "./themes/spectrum-two.css";
-
 .spectrum-Dial {
+	--spectrum-dial-background-color-default: var(--spectrum-gray-75);
+	--spectrum-dial-handle-marker-color-key-focus: var(--spectrum-gray-25);
+
 	--spectrum-dial-handle-marker-color: var(--spectrum-gray-700);
 	--spectrum-dial-border-color: var(--spectrum-gray-700);
 
@@ -52,7 +53,9 @@
 		--spectrum-dial-width: 24px;
 		--spectrum-dial-height: 24px;
 	}
+}
 
+.spectrum-Dial {
 	position: relative;
 
 	/* Don't let z-index'd child elements float above other things on the page */

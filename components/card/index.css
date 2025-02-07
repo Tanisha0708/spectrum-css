@@ -11,8 +11,6 @@
  * governing permissions and limitations under the License.
  */
 
-@import "./themes/spectrum-two.css";
-
 .spectrum-Card {
 	/* Default Layout */
 	--spectrum-card-background-color: var(--mod-card-background-color, var(--spectrum-background-layer-2-color));
@@ -67,6 +65,12 @@
 	/* Horizontal */
 	--spectrum-card-horizontal-body-padding: var(--mod-card-horizontal-body-padding, var(--spectrum-spacing-300));
 	--spectrum-card-horizontal-preview-padding: var(--mod-card-horizontal-preview-padding, var(--spectrum-spacing-200));
+
+	--spectrum-card-border-color: var(--spectrum-gray-100);
+	--spectrum-card-border-color-hover: var(--spectrum-gray-200);
+	--spectrum-card-divider-color: var(--spectrum-gray-200);
+	--spectrum-card-preview-background-color: var(--spectrum-gray-100);
+	--spectrum-card-preview-background-color-hover: var(--spectrum-gray-200);
 
 	&.spectrum-Card--quiet {
 		--mod-card-minimum-width: var(--mod-card-minimum-width-quiet);

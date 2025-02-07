@@ -28,7 +28,6 @@
     ".spectrum-Checkbox--emphasized:focus-visible .spectrum-Checkbox-input:checked + .spectrum-Checkbox-box:before",
     ".spectrum-Checkbox--emphasized:hover .spectrum-Checkbox-input:checked + .spectrum-Checkbox-box:before",
     ".spectrum-Checkbox--sizeL",
-    ".spectrum-Checkbox--sizeM",
     ".spectrum-Checkbox--sizeS",
     ".spectrum-Checkbox--sizeXL",
     ".spectrum-Checkbox-box",
@@ -207,14 +206,6 @@
     "--spectrum-text-to-control-200",
     "--spectrum-text-to-control-300",
     "--spectrum-text-to-control-75"
-  ],
-  "system-theme": [
-    "--system-checkbox-checkmark-color",
-    "--system-checkbox-control-color-default",
-    "--system-checkbox-control-color-down",
-    "--system-checkbox-control-color-focus",
-    "--system-checkbox-control-color-hover",
-    "--system-checkbox-control-corner-radius"
   ],
   "passthroughs": [],
   "high-contrast": [

@@ -36,7 +36,6 @@
     ".spectrum-CloseButton.is-keyboardFocused:not(:disabled)",
     ".spectrum-CloseButton.is-keyboardFocused:not(:disabled) .spectrum-CloseButton-UIIcon",
     ".spectrum-CloseButton.spectrum-CloseButton--sizeL",
-    ".spectrum-CloseButton.spectrum-CloseButton--sizeM",
     ".spectrum-CloseButton.spectrum-CloseButton--sizeS",
     ".spectrum-CloseButton.spectrum-CloseButton--sizeXL",
     ".spectrum-CloseButton.spectrum-CloseButton--staticBlack",
@@ -138,18 +137,6 @@
     "--spectrum-transparent-white-400",
     "--spectrum-transparent-white-500",
     "--spectrum-white"
-  ],
-  "system-theme": [
-    "--system-close-button-background-color-default",
-    "--system-close-button-background-color-down",
-    "--system-close-button-background-color-focus",
-    "--system-close-button-background-color-hover",
-    "--system-close-button-static-black-static-background-color-down",
-    "--system-close-button-static-black-static-background-color-focus",
-    "--system-close-button-static-black-static-background-color-hover",
-    "--system-close-button-static-white-static-background-color-down",
-    "--system-close-button-static-white-static-background-color-focus",
-    "--system-close-button-static-white-static-background-color-hover"
   ],
   "passthroughs": [
     "--mod-button-animation-duration",
